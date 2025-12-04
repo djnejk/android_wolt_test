@@ -1,4 +1,4 @@
-package com.djdevs.djnejk.testdeeplink.ui.theme
+package com.here.app.maps
 
 import android.app.Activity
 import android.os.Build

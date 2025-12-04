@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "com.djdevs.djnejk.testdeeplink"
+    namespace = "com.here.app.maps"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.djdevs.djnejk.testdeeplink"
+        applicationId = "com.here.app.maps"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

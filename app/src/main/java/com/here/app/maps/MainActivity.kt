@@ -1,4 +1,4 @@
-package com.djdevs.djnejk.testdeeplink
+package com.here.app.maps
 
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -13,10 +13,10 @@ class MainActivity : AppCompatActivity() {
         val textView = findViewById<TextView>(R.id.urlText)
         val data: Uri? = intent?.data
 
-        if (data != null) {
-            textView.text = "URL:\n${data}"
+        textView.text = if (data != null) {
+            "URL z Woltu:\n${data}\n\nlat/lon část:\n${data.path}"
         } else {
-            textView.text = "Appka spuštěná normálně (bez deeplinku)"
+            "Appka spuštěná normálně (bez deeplinku)"
         }
     }
 }

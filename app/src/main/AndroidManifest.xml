@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.djdevs.djnejk.testdeeplink">
+    package="com.here.app.maps">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestDeeplink">
-        <!-- pozor, theme název může být trochu jiný podle projektu -->
 
         <activity
             android:name=".MainActivity"
@@ -21,33 +20,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <!-- Zachycování odkazů -->
+            <!-- HERE deeplink -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <!-- VŠECHNY http/https odkazy -->
-                <data android:scheme="http" />
+                <!-- share.here.com přes http i https -->
                 <data android:scheme="https" />
-
-                <!-- WAZE -->
-                <data android:scheme="waze" />
-
-                <!-- HERE WE GO – různé verze -->
-                <data android:scheme="here" />
-                <data android:scheme="herewego" />
-
-                <!-- YANDEX MAPS – různé verze -->
-                <data android:scheme="yandexmaps" />
-                <data android:scheme="yandexnavi" />
-
-                <!-- Specifické weby -->
-                <data android:host="yandex.ru" />
-                <data android:host="yandex.com" />
                 <data android:host="share.here.com" />
-
+                <data android:scheme="http" />
+                <data android:host="share.here.com" />
             </intent-filter>
 
         </activity>

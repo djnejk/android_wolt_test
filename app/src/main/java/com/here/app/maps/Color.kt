@@ -1,4 +1,4 @@
-package com.djdevs.djnejk.testdeeplink.ui.theme
+package com.here.app.maps
 
 import androidx.compose.ui.graphics.Color
 
