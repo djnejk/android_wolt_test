@@ -1,16 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/urlText"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Waiting for URL..."
-        android:textSize="18sp" />
+        android:orientation="vertical"
+        android:padding="20dp">
 
-</LinearLayout>
+        <!-- NADPIS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nastavení"
+            android:textSize="22sp"
+            android:paddingBottom="20dp"/>
+
+        <!-- SWITCH INSTANTNÍHO OTEVŘENÍ -->
+        <Switch
+            android:id="@+id/switchInstant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instantně otevřít odkaz"/>
+
+        <!-- SWITCH AUTOMATICKÉ NAVIGACE -->
+        <Switch
+            android:id="@+id/switchNavigate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Začít hned navigovat"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- URL -->
+        <TextView
+            android:id="@+id/urlText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="URL:"
+            android:textSize="16sp"
+            android:paddingTop="10dp"/>
+
+        <!-- Souřadnice -->
+        <TextView
+            android:id="@+id/coordsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Souřadnice:"
+            android:textSize="16sp"
+            android:paddingTop="10dp"/>
+
+        <!-- Mapy.cz URL -->
+        <TextView
+            android:id="@+id/mapyUrlText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mapy.com URL:"
+            android:textSize="16sp"
+            android:paddingTop="10dp"/>
+
+        <!-- TLAČÍTKO OTEVŘÍT MAPY -->
+        <Button
+            android:id="@+id/openMapyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spustit navigaci"
+            android:layout_marginTop="20dp"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
