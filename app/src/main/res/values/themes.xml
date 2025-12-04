@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Hlavní theme aplikace, POTOMEK Theme.AppCompat -->
+    <style name="Theme.TestDeeplink" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Barvy klidně můžeš doladit později, teď stačí prázdné -->
+    </style>
+
+</resources>
